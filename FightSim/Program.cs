@@ -1,7 +1,4 @@
 ﻿
-
-
-
 int hp1 = 100;
 int hp2 = 100;
 int RoundCount = 1;
@@ -33,7 +30,24 @@ while (hp1 > 0 && hp2 > 0)
     
 }
 
-Console.ReadLine();
+if(hp1<0 && hp2 > 0)
+{
+    Console.WriteLine("--------Evil guy won--------");
+    Console.ReadLine();
+}
+
+if(hp2<0 && hp1 > 0)
+{
+    Console.WriteLine("--------Hero won--------");
+    Console.ReadLine();
+}
+
+if(hp1<0 && hp2 < 0)
+{
+    Console.WriteLine("--------its a draw--------");
+    Console.ReadLine();
+}
+
 
 //Break; gör så att en loop avslutas.  
 
